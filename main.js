@@ -13,3 +13,14 @@ var cardFour  = "king";
 if (cardOne === cardFour) {
 	alert("Yay! A Match!");
 }*/
+
+var gameBoard = document.getElementById("game-board");
+
+var createCards = function() {
+  for (var i = 0; i < 4; i++) {
+    var newCards = document.createElement("div");
+    newCards.className = "card";
+    gameBoard.appendChild(newCards);
+  }
+};
+createCards();
