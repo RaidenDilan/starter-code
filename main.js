@@ -6,10 +6,10 @@ var cardThree = "king";
 var cardFour  = "king";
 
 // Checks for equality between two cards
-if (cardOne === cardTwo) {
+/*if (cardOne === cardTwo) {
   alert("Yay! A Match!");
 }
 
 if (cardOne === cardFour) {
 	alert("Yay! A Match!");
-}
+}*/
