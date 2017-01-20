@@ -65,3 +65,9 @@ footer {
 h1, h2, p, footer {
 	text-align: center;
 }
+
+/*This eeps the cards that show up into an almost exact size as the yellow cards*/
+img {
+	height: 202px;
+  	width: 152px;
+}
