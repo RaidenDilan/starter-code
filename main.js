@@ -21,9 +21,8 @@ function createBoard() {
 
     // Appends the card to the board
     board.appendChild(cardElement);
-    board.appendChild(cardElement);
   }
-}
+};
 // Checks to see if there are any cards in play.
 function isTwoCards() {
   // Adds a card to array of cards being viewed/clicked.
@@ -31,9 +30,9 @@ function isTwoCards() {
 	// Shows the card's image when clicked.
 	console.log(this.getAttribute('data-card'));
 	if (this.getAttribute('data-card') === 'king') {
-		this.innerHTML = "<img src='images/king.png'>"; // King image
+		this.innerHTML = "<img src='images/king.png' alt='King of Spades'/>"; // King image
 	} else {
-		this.innerHTML = "<img src='images/queen.png'>"; //Queen image
+		this.innerHTML = "<img src='images/queen.png' alt='Queen of Hearts'/>"; //Queen image
 	}
   // Checks for a match if you have two cards in play/clicked.
   if (cardsInPlay.length === 2) {
@@ -42,15 +41,16 @@ function isTwoCards() {
     // Clears cards in play array for next try
     cardsInPlay = [];
   }
-}
+};
 function isMatch(cards) {
   // Alerts the viewer with a winning message
   if (cards[0] === cards[1]) {
     alert("Congradulations!");
+  // Alerts the viewer with a losing message
   } else {
     alert("Please try again!");
 
   }
-}
+};
 
 createBoard();
