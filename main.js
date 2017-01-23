@@ -48,9 +48,17 @@ function isMatch(cards) {
     alert("Congradulations!");
   // Alerts the viewer with a losing message
   } else {
+    reset();
     alert("Please try again!");
 
   }
 };
+function reset() {
+  for (var i=0; i<cards.length; i++) {
+    if (document.getElementsByClassName('card')[i]) {
+      document.getElementsByClassName('card')[i].innerHTML = "";
+    }
+  }
+}
 
 createBoard();
